@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/editTextTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:hint="Title"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/editTextContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextTitle"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Content"
+        android:gravity="top"
+        android:minLines="5"
+        android:background="@drawable/rounded_background" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextContent"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="50dp"
+        android:text="Save"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/custom_button_background"/>
+
+    <Button
+        android:id="@+id/buttonDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextContent"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="80dp"
+        android:layout_toEndOf="@id/buttonSave"
+        android:text="Delete"
+        android:textColor="#FFFFFF"
+        android:background="@drawable/custom_button_background"/>
+
+</RelativeLayout>

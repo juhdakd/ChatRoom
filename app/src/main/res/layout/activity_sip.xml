@@ -1,0 +1,83 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bd">
+
+    <TextView
+        android:id="@+id/tv_title1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="ChatNote"
+        android:textSize="50dp"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:paddingTop="50dp" />
+
+    <LinearLayout
+        android:id="@+id/usernameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title1"
+        android:layout_marginTop="80dp"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SIP account:"
+            android:textColor="#000080"
+            android:textSize="20dp"/>
+
+        <EditText
+            android:id="@+id/accountInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="please input sip account："
+            android:minHeight="48dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="password:"
+            android:textSize="20dp"
+            android:textColor="#000080" />
+
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="please input password"
+            android:minHeight="48dp"
+            android:password="true" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Enter his/her account:"
+            android:textSize="20dp"
+            android:textColor="#000080"/>
+
+        <EditText
+            android:id="@+id/sipInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="48dp"
+            android:hint="请输入好友的SIP账号" />
+
+        <Button
+            android:id="@+id/startChatBtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="40dp"
+            android:text="开始聊天"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:background="@drawable/custom_button_background"/>
+    </LinearLayout>
+
+</RelativeLayout>

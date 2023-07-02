@@ -1,0 +1,47 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/bd">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:paddingTop="30dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="32dp"
+        android:text="ChatNote"
+        android:textSize="50dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/socketButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="150dp"
+        android:text="Socket"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_button_background"/>
+
+    <Button
+        android:id="@+id/sipButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIP"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_button_background"/>
+    <Button
+        android:id="@+id/noteButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Note"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@drawable/custom_button_background"/>
+</LinearLayout>
